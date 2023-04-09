@@ -1,0 +1,1198 @@
+@font-face {
+  font-family: AvertaDemo ;
+  src: url(./asset/FontsFree-Net-AvertaDemoPECuttedDemo-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+  cursor: pointer;
+}
+
+/* nav */
+
+li, a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    height: 3vh;
+    overflow: hidden;
+}
+
+.open {
+    cursor: pointer;
+    font-family: AvertaDemo ;
+    width: 200;
+    color: #000000;
+}
+
+nav{
+    display: block;
+}
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+/* nav */
+
+/* banner */
+.BannerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 60px;
+    padding: 0 0 0 50px;
+}
+
+.BannerSection .img {
+   width: 50%;
+   height: 100%;
+   position: relative;
+    
+}
+
+
+
+.BannerSection .bg-ellipse{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    height: 100px;
+    width: 100px;
+}
+.BannerSection .bg-Rectangle{
+    z-index: 1;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: -60px;
+    right: 60px;
+    
+}
+
+.BannerSection img {
+    z-index: 2;
+    position: absolute;
+   height: 100%;;
+   width: 100%;
+   object-fit: fill;
+    
+}
+
+.BannerSection .text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.BannerSection .text .bg-dotted{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 0;
+}
+
+.BannerSection h1 {
+    font-family: AvertaDemo ;
+    font-style: normal;
+font-weight: bolder;
+font-size: 40px;
+line-height: 49px;
+}
+
+.BannerSection p {
+    margin-top: 30px;
+    font-family: AvertaDemo ;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+    color: #565656;
+}
+
+
+.BannerSection .Btn {
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: AvertaDemo ;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    background: #0000FF;
+    border: none;
+    border-radius: 100px;
+    z-index: 1;
+    width: 250px;
+  }
+
+/* banner */
+
+
+  /*Client-Section */
+  .ClientSection{
+    height: fit-content;
+    padding: 0 50px;
+  }
+  .client {
+    display: flex;
+    padding: 20px;
+    width: 90%;
+    font-size: 10px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.client .text{
+    width: 30%;
+}
+
+.client .text h1{
+    font-family: AvertaDemo ;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000; 
+}
+.client .text p{
+    font-family: AvertaDemo ;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: #757575;
+
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.logos > div{
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+.logos > div > img{
+    width: 100px;
+}
+
+  /*Client-Section */
+
+  /* About Section */
+  .AboutSection{
+    padding: 30px 50px;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .AboutSection .bg-rectangle{
+    top: 20%;
+    left: 50px;
+    position: absolute;
+    width: 150px;
+    z-index: 0;
+  }
+  .AboutSection .bg-dot{
+    bottom: 1.25rem;
+    position: absolute;
+    z-index: 0;
+  }
+  .AboutSection .bg-bigrec{
+    top: 5%;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    height: 80%;
+    width: 65%;
+  }
+  .AboutSection .bg-ring {
+    bottom: 15px;
+    right: 0;
+    position: absolute;
+    /* /* z-index: 0;  */
+  }
+  .AboutSection .sectionDiv{
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+  }
+  .AboutSection .sectionDiv .text{
+    width: 30%;
+  }
+  .AboutSection .sectionDiv .text h1{
+    font-family: AvertaDemo;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 50px;
+    color: #000000;
+  }
+  .AboutSection .sectionDiv .text {
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+
+  }
+  .AboutSection .sectionDiv .cards{
+    width: 50%;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .AboutSection .sectionDiv .cards .card{
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    width: 250px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .AboutSection .sectionDiv .cards .card .cardImg{
+    background: #2639ED;
+    width: 5rem;
+    height: 5rem;
+    padding: 10px;
+  }
+  .cardImg img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .AboutSection .sectionDiv .cards .card h1{
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+  }
+
+  .AboutSection .sectionDiv .cards .card p{
+    font-family: AvertaDemo ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: #757575;
+    margin-top: 20px;
+  }
+  /* About Section */
+
+  /* videoSection */
+  .videoSection{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .videoSection .vidDiv{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    
+  }
+
+  .videoSection .vidDiv button{
+    cursor: pointer;
+  }
+  .videoSection .vidDiv button:hover{
+  scale:#2639ED;
+  }
+  .videoSection .vidDiv .playIcon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    z-index: 2;
+  }
+  .videoSection .vidDiv .bg-circle{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 8px;
+    right: -3px;
+    z-index: 0;
+  }
+  .videoSection .vidDiv img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .videoSection .text {
+    width: 45%;
+    position: relative;
+    height: 100%;
+  }
+  .videoSection .text .bg-rectangle{
+    top:25%;
+    left: -10px;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .videoSection .text .textText {
+    top:30%;
+    left: 40px;
+    position: absolute;
+    z-index: 2;
+  }
+  .videoSection .text h1 {
+    font-family: AvertaDemo ;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 49px;
+    z-index: 2;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  .videoSection .text p{
+    font-family: AvertaDemo ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+  }
+
+
+  /* videoSection */
+
+  /* MoreSection */
+  .MoreSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    margin: auto;
+    height: 100vh;
+  }
+  .MoreSection .heading{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 30%;
+  }
+  .MoreSection .heading h1{
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+  }
+  .MoreSection .heading p{
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #757575;
+  }
+  .MoreSection .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    overflow: hidden;
+    height: 60%;
+  }
+  .MoreSection .body .person{
+    position: relative;
+    width: 30%;
+    height: 100%;
+  }
+  .MoreSection .body .person .person{
+    width: 100%;
+    height: 100%;
+  }
+  .MoreSection .body .person .bg-dot{
+    width: 200px;
+    right: 0;
+    position: absolute;
+  }
+  .MoreSection .body .person .bg-ring{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+  }
+
+  .MoreSection .body .feedback{
+    width: 30%;
+    height: 100%;
+  }
+  .MoreSection .body h1{
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 49px;
+    color: #000000;
+  }
+  .MoreSection .body p{
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #757575;
+    margin-bottom: 20px;
+  }
+  .MoreSection .body .slider{
+    display: flex;
+  
+  }
+  .MoreSection .body .slider span{
+    margin-right: 20px;
+    border: 8px solid #E7F0FC;
+    border-radius: 8px;
+  }
+
+  .MoreSection .body .slider .active{
+    border-color: #2639ED;
+  }
+  .MoreSection .body .people{
+    height: 100%;
+    width: 30%;
+  }
+  .MoreSection .body .people .bg-circle{
+    position: absolute;
+    width: 100px;
+  }
+  .MoreSection .body .peopleImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* MoreSection */
+
+  /* newsletter */
+  .NewsletterSsection{
+    padding: 60px 50px;
+    height: 80vh;
+    
+  }
+  .NewsletterDiv{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    height: 80%;
+    align-items: center;
+    background: #F4F9FF;
+    border-radius: 75px;
+    padding: 30px;
+    position: relative;
+  }
+  .NewsletterDiv .bg-newsletter{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+  .NewsletterDiv .bg-rectangle{
+    /* height: 100%; */
+    position: absolute;
+    left: -20px;
+    height: 150px;
+    bottom: -20px;
+    z-index: -1;
+  }
+  .NewsletterDiv .bg-dot{
+    /* height: 100%; */
+    position: absolute;
+    right: -30px;
+    height: 150px;
+    top: -50px;
+    z-index: -1;
+  }
+  .NewsletterDiv .text{
+
+  }
+  .NewsletterDiv .text h1{
+    font-family: AvertaDemo;
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 49px;
+    color: #000000;
+  }
+  .NewsletterDiv .text p{
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #757575;
+    margin-bottom: 20px;
+  }
+  .NewsletterDiv .input{
+    position: absolute;
+    right: 40px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-image: url(./img/bg-newsletter.png); */
+    
+  }
+  .NewsletterDiv .input .innerInput{
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .NewsletterDiv .input .innerInput input{
+    padding: 20px;
+    height: 100%;
+    border: none;
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #959595;
+    width: 50%;
+  }
+  .NewsletterDiv .input .innerInput button{
+    height: 100%;
+    border: none;
+    background: #2639ED;
+    border-radius: 60px;
+    width: 40%;
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  /* newsletter */
+
+  /* hr */
+  .horizontalLine{
+    border: 1px solid #E4E4E4;
+    margin: 0 60px 20px 60px;
+  }
+  /* hr */
+
+  /* footer */
+  .footerSection{
+    padding: 60px 50px 0 50px;
+    height: 80vh;
+    margin: 0;
+  }
+  .footerSection .topFooter{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+  }
+  .footerSection .topFooter .rightFooter{
+    width: 35%;
+    top: 100%;
+  }
+  .footerSection .topFooter  .mainLogo{
+    margin-bottom: 30px;
+    width: 80px;
+  }
+  .footerSection .topFooter p{
+    margin-bottom: 30px;
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #565656;
+  }
+  .footerSection .topFooter .logo{
+    display: flex;
+  }
+  .footerSection .topFooter .logo a{
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  .footerSection .topFooter .logo a img{
+    text-decoration: none;
+    width: 30px;
+  }
+  .footerSection .leftFooter{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: top;
+  }
+  .footerSection .leftFooter .innerLeftDiv{
+    
+  }
+  .footerSection .leftFooter .innerLeftDiv h1{
+    font-family: AvertaDemo;
+    font-weight: 900;
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 49px;
+    color: #000000;
+  }
+  .footerSection .leftFooter .innerLeftDiv p,
+  .footerSection .leftFooter .innerLeftDiv a{
+    font-family: AvertaDemo;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  .footerSection .bottomFooter{
+    display: flex;
+    justify-content: center;
+    text-align: bottom;
+    height: 20%;
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+/* or 22px */
+
+
+color: #A4A4A4;
+  }
+
+
+  /* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 800px){
+    .collapse{
+        display: flex;
+        flex-direction: column;
+        width: 20px;
+        }
+        .horizontal{
+            border:2px solid #000;
+            margin-bottom: 3px;
+        }
+        nav{
+            display: none;
+        }
+        .BannerSection {
+            margin: 0 10px;
+            height: fit-content;
+            position: relative;
+            
+        }
+      
+         
+         
+         
+         .BannerSection .bg-ellipse{
+             z-index: 1;
+             position: absolute;
+             top: 0;
+             left: -10px;
+             height: 50px;
+             width: 50px;
+             
+             display: none;
+         }
+         .BannerSection .bg-dotted{
+             
+             display: none;
+         }
+         .BannerSection .bg-Rectangle{
+             z-index: 1;
+             position: absolute;
+             height: 50px;
+             width: 50px;
+             bottom: -10px;
+             right: 100px;
+             display: none;
+             
+         }
+         
+         .BannerSection img {
+          display: block;
+          position: static;
+          margin: auto;
+          margin-left: -50%;
+            height: 400px;
+            width: 200%;
+            object-fit: contain;
+            margin-top: 20px;
+             
+         }
+        
+        .BannerSection .text{
+            margin: 0 100px;
+            width: 100%;
+        }
+        
+        .BannerSection h1 {
+            text-align: center;
+        }
+        
+        .BannerSection p {
+            margin-top: 30px;
+            font-family: AvertaDemo ;
+            font-size: normal;
+            color: #565656;
+        }
+        
+        
+        .BannerSection  .Btn {
+            margin-top: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: AvertaDemo ;
+            color: #FFFFFF;
+            padding: 20px 40px;
+            background: #0000FF;
+            border: none;
+            border-radius: 100px;
+          }
+          section{
+            flex-direction: column;
+          }
+
+          /* Client */
+          .client {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+            font-size: 10px;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .client .text{
+          width: 100%;
+          margin-bottom: 20px;
+      }
+
+      .logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .logos > div{
+        width: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .logos > div > img{
+        width: 80px;
+    }
+    .logos > div > .mt{
+        margin-top: 10px;
+    }
+
+    
+          /* Client */
+
+          /* About Section */
+          .AboutSection{
+            padding: 30px 50px;
+            height: fit-content;
+            position: relative;
+          }
+          
+          .AboutSection .bg-rectangle{
+            top: 20%;
+            left: 50px;
+            position: absolute;
+            width: 150px;
+            z-index: 0;
+            display: none;
+          }
+          .AboutSection .bg-dot{
+            bottom: 1.25rem;
+            position: absolute;
+            z-index: 0;
+            display: none;
+          }
+          .AboutSection .bg-bigrec{
+            top: 5%;
+            right: 0;
+            position: absolute;
+            z-index: 0;
+            height: 80%;
+            width: 65%;
+            display: none;
+          }
+          .AboutSection .bg-ring{
+            bottom: 15px;
+            right: 0;
+            position: absolute;
+            z-index: 0;
+            display: none;
+          }
+          .AboutSection .sectionDiv{
+            margin: 0 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            position: absolute;
+            z-index: 999;
+            top: 0;
+            left: 0;
+          }
+          .AboutSection .sectionDiv .text{
+            width: 100%;
+          }
+          .AboutSection .sectionDiv .text h1{
+            font-family: AvertaDemo;
+            font-weight: bolder;
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 50px;
+            color: #000000;
+          }
+          .AboutSection .sectionDiv .text {
+            font-family: AvertaDemo;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #565656;
+        
+          }
+          .AboutSection .sectionDiv .cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+          }
+        
+          .AboutSection .sectionDiv .cards .card{
+            background: #FFFFFF;
+            border: 1px solid #F2F2F2;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+            border-radius: 40px;
+            width: 300px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+          }
+    
+          /* About Section */
+
+          /* videoSection */
+  .videoSection{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-top: 120%;
+    margin-bottom: 300px;
+  }
+
+  .videoSection .vidDiv{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+    
+  }
+
+  .videoSection .vidDiv button{
+    cursor: pointer;
+  }
+  .videoSection .vidDiv button:hover{
+  scale:#2639ED;
+  }
+  .videoSection .vidDiv .playIcon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 43%;
+    top: 70%;
+    z-index: 2;
+  }
+  .videoSection .vidDiv .bg-circle{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 8px;
+    right: -3px;
+    z-index: 0;
+  }
+  .videoSection .vidDiv img{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .videoSection .text {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+  .videoSection .text .bg-rectangle{
+    top:25%;
+    left: -10px;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+  }
+  
+  .videoSection .text .textText {
+    top:90%;
+    left: 40px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
+  .videoSection .text h1 {
+    font-family: AvertaDemo ;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 49px;
+    z-index: 2;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  .videoSection .text p{
+    font-family: AvertaDemo ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+  }
+
+
+  /* videoSection */
+
+  /* MoreSection */
+  .MoreSection{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .MoreSection .body{
+    flex-direction: column;
+  }
+  .MoreSection .body .person{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .MoreSection .body .person .bg-ring{
+    position: absolute;
+    left: 10px;
+    bottom: 60px;
+  }
+
+  .MoreSection .body .feedback{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+  .MoreSection .body .people{
+    height: 100%;
+    width: 80%;
+  }
+
+
+  /* MoreSection */
+
+   /* newsletter */
+   .NewsletterSsection{
+    padding: 60px 50px;
+    height: 80vh;
+    
+  }
+  .NewsletterDiv{
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+  }
+  .NewsletterDiv .bg-newsletter{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    display: none;
+  }
+  .NewsletterDiv .bg-rectangle{
+    /* height: 100%; */
+    position: absolute;
+    left: -20px;
+    height: 150px;
+    bottom: -20px;
+    z-index: -1;
+  }
+  .NewsletterDiv .bg-dot{
+    /* height: 100%; */
+    position: absolute;
+    right: -30px;
+    height: 150px;
+    top: -50px;
+    z-index: -1;
+  }
+  .NewsletterDiv .text h1{
+    font-family: AvertaDemo;
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 49px;
+    color: #000000;
+  }
+  .NewsletterDiv .text p{
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #757575;
+    margin-bottom: 20px;
+  }
+  .NewsletterDiv .input{
+    position: absolute;
+    bottom: 0px;
+    top: 50px;
+    right: 50px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-image: url(./img/bg-newsletter.png); */
+    
+  }
+  .NewsletterDiv .input .innerInput{
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .NewsletterDiv .input .innerInput input{
+    padding: 20px;
+    height: 100%;
+    border: none;
+    font-family: AvertaDemo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #959595;
+    width: 50%;
+  }
+  /* newsletter */
+
+
+    
+}
+
+
+
+
+
